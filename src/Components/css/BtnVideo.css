@@ -1,0 +1,39 @@
+.controls {
+  display: grid;
+  grid-template-columns: 50px 20px 50px 1fr 100px;
+  grid-template-areas: "like . dislike . more";
+  align-items: center;
+  text-align: center;
+  background: var(--color-primary);
+  padding: 10px 15px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 5px black;
+}
+
+.btn {
+  color: var(--color-font);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.like {
+  grid-area: like;
+}
+
+.dislike {
+  grid-area: dislike;
+}
+
+.more-info {
+  grid-area: more;
+  padding: 10px 5px;
+  background: var(--color-black);
+  border-bottom: 3px solid var(--color-black-hover);
+  border-radius: 20px;
+}
+
+.more-info:hover {
+  background-color: var(--color-black-hover);
+}
