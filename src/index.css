@@ -3,7 +3,8 @@
   /*Colors*/
   --color-background: #1b2a49;
   --color-primary: #00909e;
-  --color-secundary: #465881;
+  --color-secundary: hsl(222deg, 30%, 39%);
+  --color-secundary-hover: hsl(222deg, 30%, 39%, 0.88);
   --color-font: #c9d1d3;
 
   --color-white: white;
@@ -67,4 +68,13 @@ code {
 
 .btn-secundary:hover {
   background-color: var(--color-red);
+}
+
+.btn-option {
+  background-color: var(--color-secundary);
+}
+
+.btn-option:hover {
+  background-color: var(--color-secundary-hover);
+  box-shadow: 0 2px 5px var(--color-secundary-hover);
 }

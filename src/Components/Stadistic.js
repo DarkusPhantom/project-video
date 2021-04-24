@@ -1,16 +1,16 @@
 import React from "react";
 
-import "./css/StadisticTable.css";
+import "./css/Stadistic.css";
 import NavbarTable from "./NavbarTable";
-import Stadistics from "./Stadistics";
+import StadisticTable from "./StadisticTable";
 
-function StadisticTable() {
+function Stadistic() {
   return (
     <div class="StadisticTable">
       <NavbarTable />
-      <Stadistics />
+      <StadisticTable />
     </div>
   );
 }
 
-export default StadisticTable;
+export default Stadistic;

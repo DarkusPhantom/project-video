@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 
 import MediaPlayer from "./MediaPlayer";
 import Navbar from "./Navbar";
-import StadisticTable from "./StadisticsTable";
+import Stadistic from "./Stadistic";
 
 function App() {
   return (
     <Fragment>
       <MediaPlayer />
       <Navbar />
-      <StadisticTable />
+      <Stadistic />
     </Fragment>
   );
 }
