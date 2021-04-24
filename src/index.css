@@ -11,6 +11,8 @@
   --color-black-hover: #373737;
   --color-light-gray: rgba(107, 103, 103, 0.77);
   --color-gray: #6b6767;
+  --color-green: hsl(120deg, 70%, 48%);
+  --color-red: hsl(0deg, 72%, 39%);
 }
 
 /*------------  Fuentes  ------------------*/
@@ -37,4 +39,32 @@ code {
 .container {
   width: 95%;
   margin: auto;
+}
+
+.btn:not(.btn-reaction) {
+  color: var(--color-font);
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: none;
+  border: 3px solid var(--color-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-green);
+}
+
+.btn-secundary {
+  border: none;
+  border: 3px solid var(--color-red);
+}
+
+.btn-secundary:hover {
+  background-color: var(--color-red);
 }

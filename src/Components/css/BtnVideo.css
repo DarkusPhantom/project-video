@@ -10,14 +10,6 @@
   box-shadow: 0 2px 5px black;
 }
 
-.btn {
-  color: var(--color-font);
-}
-
-.btn:hover {
-  cursor: pointer;
-}
-
 .like {
   grid-area: like;
 }
@@ -28,10 +20,8 @@
 
 .more-info {
   grid-area: more;
-  padding: 10px 5px;
-  background: var(--color-black);
   border-bottom: 3px solid var(--color-black-hover);
-  border-radius: 20px;
+  background: var(--color-black);
 }
 
 .more-info:hover {
