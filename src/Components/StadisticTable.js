@@ -1,19 +1,20 @@
 import React from "react";
 
 import "./css/StadisticTable.css";
+import DataTable from "../Data/dataTable";
 
 function StadisticTable() {
   return (
     <div className="StadisticTable">
       <header className="header-table grid-header">
         <div className="header-table-name id">
-          <p>Id</p>
+          <p>ID</p>
         </div>
         <div className="header-table-name country">
           <p>Pais</p>
         </div>
         <div className="header-table-name range">
-          <p>Rango etario</p>
+          <p>Rango Etario</p>
         </div>
         <div className="header-table-name datetime">
           <p>Fecha</p>
@@ -23,27 +24,17 @@ function StadisticTable() {
         </div>
       </header>
       <div className="body-table">
-        <div className="row grid-row">
-          <div className="col">1</div>
-          <div className="col">Argentina</div>
-          <div className="col">Millennial</div>
-          <div className="col">2020-09-01</div>
-          <div className="col">2014</div>
-        </div>
-        <div className="row grid-row">
-          <div className="col">1</div>
-          <div className="col">Argentina</div>
-          <div className="col">Millennial</div>
-          <div className="col">2020-09-01</div>
-          <div className="col">2014</div>
-        </div>
-        <div className="row grid-row">
-          <div className="col">1</div>
-          <div className="col">Argentina</div>
-          <div className="col">Millennial</div>
-          <div className="col">2020-09-01</div>
-          <div className="col">2014</div>
-        </div>
+        {DataTable.map(({ id, country, generation, datetime, year }) => {
+          return (
+            <div className="row grid-row">
+              <div className="col">{id}</div>
+              <div className="col">{country}</div>
+              <div className="col">{generation}</div>
+              <div className="col">{datetime}</div>
+              <div className="col">{year}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
