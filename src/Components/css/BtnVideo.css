@@ -4,7 +4,7 @@
   grid-template-areas: "like . dislike . more";
   align-items: center;
   text-align: center;
-  background: var(--color-primary);
+  background: var(--color-secundary);
   padding: 10px 15px;
   border-radius: inherit;
 }

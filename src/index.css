@@ -128,3 +128,15 @@ code {
 .options-list .option:last-child:hover {
   border: inherit;
 }
+
+@media screen and (min-width: 768px) {
+  .btn-primary,
+  .btn-secundary {
+    width: 200px;
+    margin: 10px auto;
+  }
+  .btn-primary:hover,
+  .btn-secundary:hover {
+    width: 300px;
+  }
+}
