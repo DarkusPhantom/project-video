@@ -1,18 +1,18 @@
 import React from "react";
 
 import "./css/ControlsVideo.css";
-import Heart from "../Images/Icons/heart.svg";
-import HeartBroken from "../Images/Icons/heart-broken.svg";
+import { ReactComponent as Heart } from "../Images/Icons/heart.svg";
+import { ReactComponent as HeartBroken } from "../Images/Icons/heart-broken.svg";
 
 const ControlsVideo = () => {
   return (
     <div className="controls">
       <button className="btn btn-reaction like">
-        <img src={Heart} alt="Heart" />
+        <Heart />
       </button>
-      <a className="btn btn-reaction dislike">
-        <img src={HeartBroken} alt="Heart Broken" />
-      </a>
+      <button className="btn btn-reaction dislike">
+        <HeartBroken />
+      </button>
       <button className="btn more-info">More Info</button>
     </div>
   );

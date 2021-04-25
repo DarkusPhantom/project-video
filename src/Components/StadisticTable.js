@@ -7,9 +7,6 @@ function StadisticTable() {
   return (
     <div className="StadisticTable">
       <header className="header-table grid-header">
-        <div className="header-table-name id">
-          <p>ID</p>
-        </div>
         <div className="header-table-name country">
           <p>Pais</p>
         </div>
@@ -26,8 +23,7 @@ function StadisticTable() {
       <div className="body-table">
         {DataTable.map(({ id, country, generation, datetime, year }) => {
           return (
-            <div className="row grid-row">
-              <div className="col">{id}</div>
+            <div className="row grid-row" key={id}>
               <div className="col">{country}</div>
               <div className="col">{generation}</div>
               <div className="col">{datetime}</div>

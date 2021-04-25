@@ -9,7 +9,7 @@ function NavbarTable() {
       <div className="btn btn-option">
         <button>Generacion</button>
         <div className="options">
-          <span className="options-symb">*</span>
+          <button className="options-symb">▼</button>
           <ul className="options-list">
             <li className="option">
               <button>Milenials</button>
@@ -26,7 +26,9 @@ function NavbarTable() {
           </ul>
         </div>
       </div>
-      <button className="btn btn-option">Semanal</button>
+      <div className="btn btn-option">
+        <button>Semanal</button>
+      </div>
     </div>
   );
 }

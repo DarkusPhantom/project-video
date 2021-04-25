@@ -10,7 +10,7 @@
 
 .grid-header,
 .grid-row {
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(4, 25%);
   align-items: center;
   text-align: center;
 }
@@ -27,6 +27,7 @@
 .header-table-name {
   margin: 0 10px;
   text-align: center;
+  font-size: 0.85em;
 }
 
 .body-table {
@@ -43,4 +44,10 @@
 .col {
   margin: 10px 0;
   font-size: 0.85em;
+}
+
+@media screen and (min-width: 1024px) {
+  .StadisticTable {
+    font-size: 1.4em;
+  }
 }

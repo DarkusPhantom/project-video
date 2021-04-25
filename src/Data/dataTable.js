@@ -7,14 +7,14 @@ const DataTable = [
     year: 2014,
   },
   {
-    id: 1,
+    id: 2,
     country: "Argentina",
     generation: "Millennial",
     datetime: "2020-09-01",
     year: 2014,
   },
   {
-    id: 1,
+    id: 3,
     country: "Argentina",
     generation: "Millennial",
     datetime: "2020-09-01",
