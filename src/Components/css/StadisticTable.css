@@ -1,0 +1,46 @@
+.StadisticTable {
+  display: grid;
+  grid-template-areas:
+    "headerTable"
+    "bodyTable";
+  width: 95%;
+  color: var(--color-white);
+  font-size: 1.1em;
+}
+
+.grid-header,
+.grid-row {
+  grid-template-columns: repeat(5, 20%);
+  align-items: center;
+  text-align: center;
+}
+
+.header-table {
+  grid-area: headerTable;
+  display: inherit;
+  margin-bottom: 10px;
+  border-bottom: 5px solid var(--color-secundary);
+  border-radius: 50%;
+  font-size: 0.8em;
+}
+
+.header-table-name {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.body-table {
+  grid-area: bodyTable;
+  display: inherit;
+}
+
+.row {
+  display: inherit;
+  border-bottom: 1px solid var(--color-white);
+  font-size: 0.7em;
+}
+
+.col {
+  margin: 10px 0;
+  font-size: 0.85em;
+}

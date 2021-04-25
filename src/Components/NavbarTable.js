@@ -4,7 +4,7 @@ import "./css/NavbarTable.css";
 
 function NavbarTable() {
   return (
-    <div class="navbar-sort">
+    <div class="navbar navbar-sort">
       <p className="navbar-text">Ordenar por:</p>
       <a class="btn btn-option">Generacion</a>
       <a class="btn btn-option">Por Semana</a>
