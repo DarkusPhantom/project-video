@@ -22,8 +22,8 @@
   margin-right: 0;
 }
 
-.Stadistic .btn-option ~ a,
-.Stadistic .btn-option:hover a,
+.Stadistic .btn-option ~ button,
+.Stadistic .btn-option:hover button,
 .Stadistic .btn-option:hover .options-symb {
   cursor: pointer;
 }

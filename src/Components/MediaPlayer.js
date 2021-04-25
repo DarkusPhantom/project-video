@@ -2,13 +2,13 @@ import React from "react";
 
 import "./css/MediaPlayer.css";
 import Video from "./Video";
-import BtnVideo from "./BtnVideo";
+import ControlsVideo from "./ControlsVideo";
 
 function App() {
   return (
     <section className="MediaPlayer">
       <Video />
-      <BtnVideo />
+      <ControlsVideo />
     </section>
   );
 }

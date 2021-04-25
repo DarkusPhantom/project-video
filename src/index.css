@@ -21,7 +21,7 @@
 /*Roboto*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
-/*--------------- General -----------------------*/
+/*--------------- Estilos Globales -----------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -33,19 +33,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .container {
   width: 95%;
   margin: auto;
 }
 
+/* -------------------- Estilos para el navbar ------------------ */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.navbar-text {
+  color: var(--color-font);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.navbar > .btn {
+  margin-bottom: 10px;
+}
+
+/*--------------------Estilos para los botones---------------------*/
+button {
+  background: none;
+  border: none;
+}
+
+button:not(.btn-reaction) {
+  color: var(--color-font);
+}
+
 .btn:not(.btn-reaction) {
   font-size: 0.8em;
-  color: var(--color-font);
   padding: 10px 5px;
   border-radius: 20px;
   transition: 0.25s;
@@ -84,6 +109,7 @@ code {
   box-shadow: 0 2px 5px var(--color-secundary-hover);
 }
 
+/*--------------- Estilos para los botones con opciones*/
 .options {
   margin-left: 5px;
   border-left: 1px solid white;

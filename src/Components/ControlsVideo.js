@@ -1,21 +1,21 @@
 import React from "react";
 
-import "./css/BtnVideo.css";
+import "./css/ControlsVideo.css";
 import Heart from "../Images/Icons/heart.svg";
 import HeartBroken from "../Images/Icons/heart-broken.svg";
 
-const BtnVideo = () => {
+const ControlsVideo = () => {
   return (
     <div className="controls">
-      <a className="btn btn-reaction like">
+      <button className="btn btn-reaction like">
         <img src={Heart} alt="Heart" />
-      </a>
+      </button>
       <a className="btn btn-reaction dislike">
         <img src={HeartBroken} alt="Heart Broken" />
       </a>
-      <a className="btn more-info">More Info</a>
+      <button className="btn more-info">More Info</button>
     </div>
   );
 };
 
-export default BtnVideo;
+export default ControlsVideo;
