@@ -21,3 +21,9 @@
 .navbar-sort .btn:last-child {
   margin-right: 0;
 }
+
+.Stadistic .btn-option ~ a,
+.Stadistic .btn-option:hover a,
+.Stadistic .btn-option:hover .options-symb {
+  cursor: pointer;
+}

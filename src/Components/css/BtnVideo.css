@@ -6,8 +6,7 @@
   text-align: center;
   background: var(--color-primary);
   padding: 10px 15px;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 2px 5px black;
+  border-radius: inherit;
 }
 
 .like {
@@ -20,10 +19,10 @@
 
 .more-info {
   grid-area: more;
-  background: var(--color-black);
+  background: var(--color-background);
 }
 
 .more-info:hover {
-  background-color: var(--color-black-hover);
+  background-color: var(--color-background-hover);
   box-shadow: 0 2px 5px var(--color-black-hover);
 }
