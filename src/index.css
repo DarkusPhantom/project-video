@@ -48,7 +48,7 @@ code {
   border-radius: 20px;
 }
 
-.btn:hover {
+.btn:hover:not(.btn-option) {
   cursor: pointer;
 }
 
@@ -71,10 +71,62 @@ code {
 }
 
 .btn-option {
+  display: flex;
   background-color: var(--color-secundary);
+  position: relative;
 }
 
 .btn-option:hover {
   background-color: var(--color-secundary-hover);
   box-shadow: 0 2px 5px var(--color-secundary-hover);
+}
+
+.btn-option:hover a,
+.btn-option:hover .options-symb {
+  cursor: pointer;
+}
+
+.options {
+  margin-left: 5px;
+  border-left: 1px solid white;
+}
+
+.options-symb {
+  padding: 5px;
+}
+
+.options .options-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  background-color: var(--color-secundary);
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 20px 20px;
+  list-style: none;
+  display: none;
+}
+
+.options-list:hover {
+  box-shadow: none;
+}
+
+.options-list .option {
+  padding: 5px 0;
+  border-bottom: 1px solid white;
+}
+
+.options-list .option:last-child {
+  border-bottom: none;
+}
+
+.options-list .option:hover {
+  background-color: var(--color-secundary-hover);
+}
+
+.options-list .option:last-child:hover {
+  border: inherit;
 }
