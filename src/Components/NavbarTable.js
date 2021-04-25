@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./css/NavbarTable.css";
 
 function NavbarTable() {
+  /*  const [stateStadistic, setStateStadistic] = useState(false);
+
+  const setStadistic = () => {
+    setStateStadistic(true);
+  };
+
+  const unsetStadistic = () => {
+    setStateStadistic(false);
+  };*/
+
   return (
     <div className="navbar navbar-sort">
       <p className="navbar-text">Ordenar por:</p>
       <div className="btn btn-option">
         <button>Generacion</button>
         <div className="options">
-          <span className="options-symb">*</span>
+          <button className="options-symb">▼</button>
           <ul className="options-list">
             <li className="option">
               <button>Milenials</button>
@@ -26,7 +36,9 @@ function NavbarTable() {
           </ul>
         </div>
       </div>
-      <button className="btn btn-option">Semanal</button>
+      <div className="btn btn-option">
+        <button>Semanal</button>
+      </div>
     </div>
   );
 }
