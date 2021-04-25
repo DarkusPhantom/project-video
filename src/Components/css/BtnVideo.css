@@ -20,10 +20,10 @@
 
 .more-info {
   grid-area: more;
-  border-bottom: 3px solid var(--color-black-hover);
   background: var(--color-black);
 }
 
 .more-info:hover {
   background-color: var(--color-black-hover);
+  box-shadow: 0 2px 5px var(--color-black-hover);
 }
