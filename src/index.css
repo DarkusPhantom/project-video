@@ -126,13 +126,14 @@ button:not(.btn-reaction) {
   flex-direction: column;
   flex-wrap: wrap;
   position: absolute;
-  top: 35px;
-  left: 20px;
+  top: 35%;
+  left: 20%;
   background-color: var(--color-secundary);
   margin: 0;
   padding: 0;
   border-radius: 0 0 20px 20px;
   list-style: none;
+  transform: translate(-10%, 25%);
 }
 
 .options-list:hover {
