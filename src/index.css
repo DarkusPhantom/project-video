@@ -167,3 +167,17 @@ button:not(.btn-reaction) {
     width: 300px;
   }
 }
+
+/*--------- Animaciones ------------------*/
+.slidein {
+  animation: slidein 1.4s;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -5%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}

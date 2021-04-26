@@ -24,7 +24,7 @@ const listBtnOption = () => {
 function NavbarTable() {
   const [stateBtnOption, setBtnOption] = useState(false);
 
-  const toggleOnOff = () => {
+  const handleClick = () => {
     setBtnOption((prevValue) => !prevValue);
   };
 
@@ -34,7 +34,7 @@ function NavbarTable() {
       <div className="btn btn-option">
         <button>Generacion</button>
         <div className="options">
-          <button className="options-symb" onClick={toggleOnOff}>
+          <button className="options-symb" onClick={handleClick}>
             ▼
           </button>
           {stateBtnOption && listBtnOption()}
