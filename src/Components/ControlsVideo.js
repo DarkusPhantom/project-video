@@ -6,7 +6,7 @@ import { ReactComponent as HeartBroken } from "../Images/Icons/heart-broken.svg"
 
 function ControlsVideo({ video, prevVideo, nextVideo }) {
   /*Estado del boton para mostrar mas informacion del video*/
-  const [stateBtnOption, setBtnOption] = useState(false);
+  const [info, setInfo] = useState(false);
 
   /*Conteo de Likes*/
   const [countLike, setCountLike] = useState(video.likes);
@@ -16,16 +16,14 @@ function ControlsVideo({ video, prevVideo, nextVideo }) {
 
   /*Cambia el valores de los likes y dislikes cada vez que cambia de video*/
   useEffect(() => {
-    const likes = video.likes;
-    const dislikes = video.dislike;
-    setCountLike(likes);
-    setCountDislike(dislikes);
+    setCountLike(video.likes);
+    setCountDislike(video.dislike);
   }, [video.name]);
 
   /*Funcion para mostrar u ocultar el contenido cada vez que hace click*/
-  const handleClick = () => {
+  const showInfo = () => {
     /*Si el valor anterior es falso, lo retorna verdadero y viceversa*/
-    setBtnOption((prevValue) => !prevValue);
+    setInfo((prevValue) => !prevValue);
   };
 
   /*Funcion que crea el contenido de Mas Informacion del video para plasmarlo en el HTML*/
@@ -58,7 +56,7 @@ function ControlsVideo({ video, prevVideo, nextVideo }) {
 
   return (
     <Fragment>
-      {stateBtnOption && moreInfo()}
+      {info && moreInfo()}
       <div className="controls">
         <button
           className="btn btn-reaction like"
@@ -78,7 +76,7 @@ function ControlsVideo({ video, prevVideo, nextVideo }) {
         <button className="btn btn-next" onClick={nextVideo}>
           ►
         </button>
-        <button className="btn btn-more-info" onClick={handleClick}>
+        <button className="btn btn-more-info" onClick={showInfo}>
           Info Video
         </button>
       </div>
