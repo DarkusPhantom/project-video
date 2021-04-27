@@ -2,7 +2,7 @@
   "video1": {
     "id": 1,
     "src": "../video/video_1.mp4",
-    "name": "Niños haciendo no se",
+    "name": "Niños aplaudiendo",
     "likes": 150,
     "dislike": 30,
     "views": "100k"
@@ -10,7 +10,7 @@
   "video2": {
     "id": 2,
     "src": "../video/video_2.mp4",
-    "name": "Otro video",
+    "name": "Tres personas en bicicleta (No Carlos Vives ni shakira)",
     "likes": 100,
     "dislike": 20,
     "views": "50"
@@ -18,7 +18,7 @@
   "video3": {
     "id": 3,
     "src": "../video/video_3.mp4",
-    "name": "Cambiando de rutina",
+    "name": "Personas de una convencion ante una pantalla",
     "likes": 0,
     "dislike": 0,
     "views": "30M"
@@ -26,7 +26,7 @@
   "video4": {
     "id": 4,
     "src": "../video/video_4.mp4",
-    "name": "Dorime ameno",
+    "name": "Pond5",
     "likes": 102,
     "dislike": 0,
     "views": "1k"

@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./css/MediaPlayer.css";
+import Video1 from "../video/video_1.mp4";
+import Video2 from "../video/video_2.mp4";
+import Video3 from "../video/video_3.mp4";
+import Video4 from "../video/video_4.mp4";
+
 import Video from "./Video";
 import ControlsVideo from "./ControlsVideo";
 import VideosData from "../Data/StadisticVideo.json";
 
 /*Trae la informacion de La lista de videos y los convierte en objetos*/
-const listVideos = JSON.parse(JSON.stringify(VideosData));
+const listVideosData = JSON.parse(JSON.stringify(VideosData));
 
 /*Componente del video*/
 /*En esta funcion se monta el video y los controles del video */
 function MediaPlayer() {
+  /*Lista de videos*/
+  const listVideos = [Video1, Video2, Video3, Video4];
+
   /*Funcion que resetea el contador cuando llega al maximo o al minimo para avanzar o retroceder el video*/
   function useMinMax(max) {
     const [count, setCount] = useState(0);
@@ -38,11 +46,11 @@ function MediaPlayer() {
   };
 
   /*Guarda el video actual para enviarlo como parametro*/
-  const videoProps = Object.values(listVideos)[count];
+  const videoProps = Object.values(listVideosData)[count];
 
   return (
     <section className="MediaPlayer">
-      <Video />
+      <Video video={listVideos[count]} />
       <ControlsVideo
         video={videoProps}
         prevVideo={prevVideo}
