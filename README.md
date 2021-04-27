@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Aplicación de Interfaz de Análisis de vídeo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Acerca de la App
 
-## Available Scripts
+Esta app consiste en diseñar una aplicación web para informar acerca de la calidad de un video y la cantidad de reproducciones que tuvo en ciertas partes del mundo.
 
-In the project directory, you can run:
+En el set de datos, se encuentran las siguientes variables:
+● ID del video: código identificador del video para el que se miden las observaciones
+● País: país al que pertenecen las mediciones
+● Rango etario: generación a la que el público pertenece (millennials, generación X o
+baby boomers)
+● Reproducciones: cantidad de reproducciones del video.
+● Fecha: fecha en que se miden las reproducciones.
 
-### `yarn start`
+## Pasos para probar ejecutar la app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clonar este repositorio.
+2. Dirigirte dentro de la carpeta que clonaste y ejecuta: `npm run start` para probar el proyecto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Automáticamente se abrirá la app en tu navegador por defecto. En caso contrario, abre el navegador y escribe en la barra de búsqueda `localhost:3000`
 
-### `yarn test`
+## Explicación de los componentes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **index.js**: Inyecta la app en el HTML
+- **App:** Raíz de la aplicación. Contiene los componentes de _MediaPlayer_ y _Stadistic_. También incluye una sección de botones para indicar cuando el usuario quiera ver o quitar las estadísticas de la tabla de video.
+- **MediaPlayer:** Reproductor de video. Tiene los componentes que son Vídeo y _ControlsVideo_
+- **Video:** Muestra el video a reproducir
+- **ControlsVideo:** Contiene los botones para pasar al siguiente video o volver al anterior, muestra la información del video(Likes, Dislikes, Views y Nombre del video) y los botones de Like (Corazón) y dislike (Corazón roto)
+- **Stadistic:** Contiene los datos de la tabla y su sección para ordenarlo por diferentes tipos
+- **NavbarTable:** Contiene los botones para indicar como va ordenar la tabla de estadisticas. Sea por pais, generación o views
+- **StadisticTable:** Contiene todos la información para plasmar en la tabla de estadisticas. Esta dividido por Pais, Rango Etario, Fecha y Views
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
