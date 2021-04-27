@@ -1,8 +1,14 @@
 import React from "react";
 
 import "./css/StadisticTable.css";
-import DataTable from "../Data/dataTable";
+import DataList from "../Data/dataTable";
+//import TableDataVideo from "../Data/csvjson.json";
+import TableDataVideo from "../Data/DataTable.json";
 
+const listVideosData = JSON.parse(JSON.stringify(TableDataVideo));
+const listTableVideosInfo = Object.values(listVideosData);
+
+/*Componente de la tabla de estadisticas del video*/
 function StadisticTable() {
   return (
     <div className="StadisticTable">
@@ -21,16 +27,21 @@ function StadisticTable() {
         </div>
       </header>
       <div className="body-table">
-        {DataTable.map(({ id, country, generation, datetime, year }) => {
-          return (
-            <div className="row grid-row" key={id}>
-              <div className="col">{country}</div>
-              <div className="col">{generation}</div>
-              <div className="col">{datetime}</div>
-              <div className="col">{year}</div>
-            </div>
-          );
-        })}
+        {
+          /*Recorre los datos de la lista de Datos y los plasma en la tabla*/
+          listTableVideosInfo.map(
+            ({ id, country, age_range, timestamp, views }) => {
+              return (
+                <div className="row grid-row" key={id}>
+                  <div className="col">{country}</div>
+                  <div className="col">{age_range}</div>
+                  <div className="col">{timestamp}</div>
+                  <div className="col">{views}</div>
+                </div>
+              );
+            }
+          )
+        }
       </div>
     </div>
   );
