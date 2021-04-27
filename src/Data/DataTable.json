@@ -1,0 +1,330 @@
+[
+  {
+    "id": 0,
+    "video_id": 1,
+    "country": "Argentina",
+    "age_range": "Millennial",
+    "timestamp": "2020-09-01",
+    "views": 2014
+  },
+  {
+    "id": 1,
+    "video_id": 1,
+    "country": "Argentina",
+    "age_range": "Millennial",
+    "timestamp": "2020-09-02",
+    "views": 1990
+  },
+  {
+    "id": 2,
+    "video_id": 1,
+    "country": "Argentina",
+    "age_range": "Millennial",
+    "timestamp": "2020-09-03",
+    "views": 1845
+  },
+  {
+    "id": 3,
+    "video_id": 1,
+    "country": "Argentina",
+    "age_range": "Millennial",
+    "timestamp": "2020-09-04",
+    "views": 1879
+  },
+  {
+    "id": 4,
+    "video_id": 1,
+    "country": "Argentina",
+    "age_range": "Millennial",
+    "timestamp": "2020-09-05",
+    "views": 2261
+  },
+  {
+    "id": 5,
+    "video_id": 1,
+    "country": "Argentina",
+    "age_range": "Millennial",
+    "timestamp": "2020-09-06",
+    "views": 2300
+  },
+  {
+    "id": 440,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-16",
+    "views": 1061
+  },
+  {
+    "id": 441,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-17",
+    "views": 1137
+  },
+  {
+    "id": 442,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-18",
+    "views": 953
+  },
+  {
+    "id": 443,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-19",
+    "views": 942
+  },
+  {
+    "id": 444,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-20",
+    "views": 970
+  },
+  {
+    "id": 445,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-21",
+    "views": 714
+  },
+  {
+    "id": 446,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-22",
+    "views": 1119
+  },
+  {
+    "id": 447,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-23",
+    "views": 1027
+  },
+  {
+    "id": 448,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-24",
+    "views": 939
+  },
+  {
+    "id": 449,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-25",
+    "views": 965
+  },
+  {
+    "id": 450,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-26",
+    "views": 821
+  },
+  {
+    "id": 451,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-27",
+    "views": 767
+  },
+  {
+    "id": 452,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-28",
+    "views": 934
+  },
+  {
+    "id": 453,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-29",
+    "views": 792
+  },
+  {
+    "id": 454,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-30",
+    "views": 931
+  },
+  {
+    "id": 455,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-01",
+    "views": 853
+  },
+  {
+    "id": 456,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-02",
+    "views": 800
+  },
+  {
+    "id": 457,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-03",
+    "views": 909
+  },
+  {
+    "id": 458,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-04",
+    "views": 783
+  },
+  {
+    "id": 459,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-05",
+    "views": 794
+  },
+  {
+    "id": 460,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-06",
+    "views": 732
+  },
+  {
+    "id": 461,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-07",
+    "views": 904
+  },
+  {
+    "id": 462,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-08",
+    "views": 788
+  },
+  {
+    "id": 463,
+    "video_id": 1,
+    "country": "EEUU",
+    "age_range": "Baby Boomer",
+    "timestamp": "2020-09-09",
+    "views": 805
+  },
+  {
+    "id": 715,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-18",
+    "views": 1024
+  },
+  {
+    "id": 716,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-19",
+    "views": 1008
+  },
+  {
+    "id": 717,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-20",
+    "views": 497
+  },
+  {
+    "id": 718,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-21",
+    "views": 1133
+  },
+  {
+    "id": 719,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-22",
+    "views": 948
+  },
+  {
+    "id": 720,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-23",
+    "views": 852
+  },
+  {
+    "id": 721,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-24",
+    "views": 1093
+  },
+  {
+    "id": 722,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-25",
+    "views": 991
+  },
+  {
+    "id": 723,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-26",
+    "views": 1286
+  },
+  {
+    "id": 724,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-27",
+    "views": 1096
+  },
+  {
+    "id": 725,
+    "video_id": 1,
+    "country": "Italia",
+    "age_range": "Generation X",
+    "timestamp": "2020-11-28",
+    "views": 1101
+  }
+]
