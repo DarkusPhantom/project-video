@@ -1,7 +1,7 @@
 .controls {
   display: grid;
-  grid-template-columns: 50px 20px 50px 1fr 100px;
-  grid-template-areas: "like . dislike . more";
+  grid-template-columns: 13% 10px 13% 1fr 15% 15% 1fr 100px;
+  grid-template-areas: "like . dislike . prevBtn nextBtn . more";
   align-items: center;
   text-align: center;
   background: var(--color-secundary);
@@ -9,20 +9,69 @@
   border-radius: inherit;
 }
 
-.like {
+.controls .like {
   grid-area: like;
 }
 
-.dislike {
+.controls .dislike {
   grid-area: dislike;
 }
 
-.more-info {
+.controls .btn-prev {
+  grid-area: prevBtn;
+}
+
+.controls .btn-next {
+  grid-area: nextBtn;
+}
+
+.controls .btn-more-info {
   grid-area: more;
+}
+
+.btn-prev,
+.btn-next {
+  width: 30px;
+  margin: auto;
+}
+
+.btn-prev,
+.btn-next,
+.btn-more-info {
   background: var(--color-background);
 }
 
-.more-info:hover {
+.btn-prev:hover,
+.btn-next:hover,
+.btn-more-info:hover {
   background-color: var(--color-background-hover);
   box-shadow: 0 2px 5px var(--color-black-hover);
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.more-info p {
+  font-size: 0.6em;
+  color: var(--color-font);
+  text-align: center;
+  width: 30%;
+}
+
+.more-info .title-info {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+@media screen and (min-width: 1024px) {
+  .controls {
+    grid-template-columns: 50px 10px 50px 1fr 15% 15% 1fr 100px;
+  }
+
+  .more-info p {
+    font-size: 0.9em;
+  }
 }
