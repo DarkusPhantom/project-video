@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./css/NavbarTable.css";
 
+/*Lista de Opciones para el btn para plasmarlo en el HTML cada vez que se llame*/
 const listBtnOption = () => {
   return (
     <ul className="options-list">
@@ -24,6 +25,7 @@ const listBtnOption = () => {
 function NavbarTable() {
   const [stateBtnOption, setBtnOption] = useState(false);
 
+  /*Activa o desactiva la lista de opciones del btn cada vez que hace click*/
   const handleClick = () => {
     setBtnOption((prevValue) => !prevValue);
   };

@@ -4,12 +4,15 @@ import MediaPlayer from "./MediaPlayer";
 import Stadistic from "./Stadistic";
 
 function App() {
+  /*Manejo de estado de la tabla de estadisticas del video*/
   const [stateStadistic, setStateStadistic] = useState(false);
 
+  /*Funcion para insertar la tabla de estadisticas del video*/
   const setStadistic = () => {
     setStateStadistic(true);
   };
 
+  /*Funcion para quitar la tabla de estadisticas del video*/
   const unsetStadistic = () => {
     setStateStadistic(false);
   };
@@ -26,7 +29,11 @@ function App() {
           No
         </button>
       </div>
-      {stateStadistic && <Stadistic />}
+      {
+        /*Si el estado de la tabla de estadisticas es verdadero, se inserta en el documento
+          Por defecto es falso*/
+        stateStadistic && <Stadistic />
+      }
     </Fragment>
   );
 }

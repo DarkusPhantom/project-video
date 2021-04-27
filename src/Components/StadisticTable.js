@@ -1,8 +1,9 @@
 import React from "react";
 
 import "./css/StadisticTable.css";
-import DataTable from "../Data/dataTable";
+import DataList from "../Data/dataTable";
 
+/*Componente de la tabla de estadisticas del video*/
 function StadisticTable() {
   return (
     <div className="StadisticTable">
@@ -21,16 +22,19 @@ function StadisticTable() {
         </div>
       </header>
       <div className="body-table">
-        {DataTable.map(({ id, country, generation, datetime, year }) => {
-          return (
-            <div className="row grid-row" key={id}>
-              <div className="col">{country}</div>
-              <div className="col">{generation}</div>
-              <div className="col">{datetime}</div>
-              <div className="col">{year}</div>
-            </div>
-          );
-        })}
+        {
+          /*Recorre los datos de la lista de Datos y los plasma en la tabla*/
+          DataList.map(({ id, country, generation, datetime, year }) => {
+            return (
+              <div className="row grid-row" key={id}>
+                <div className="col">{country}</div>
+                <div className="col">{generation}</div>
+                <div className="col">{datetime}</div>
+                <div className="col">{year}</div>
+              </div>
+            );
+          })
+        }
       </div>
     </div>
   );
