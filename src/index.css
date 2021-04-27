@@ -182,3 +182,16 @@ button:not(.btn-reaction) {
     margin-top: 0%;
   }
 }
+
+.slideinFast {
+  animation: slideinFast 2s;
+}
+
+@keyframes slideinFast {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}

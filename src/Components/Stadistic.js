@@ -6,7 +6,7 @@ import StadisticTable from "./StadisticTable";
 
 function Stadistic() {
   return (
-    <div className="Stadistic">
+    <div className="Stadistic slideinFast">
       <NavbarTable />
       <StadisticTable />
     </div>
