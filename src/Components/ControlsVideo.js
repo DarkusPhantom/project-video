@@ -26,7 +26,8 @@ function ControlsVideo({ video, prevVideo, nextVideo }) {
     setInfo((prevValue) => !prevValue);
   };
 
-  /*Funcion que crea el contenido de Mas Informacion del video para plasmarlo en el HTML*/
+  /*Funcion que crea la estructura de contenido que va en
+   * Mas Informacion del video*/
   const moreInfo = () => {
     return (
       <div className="more-info slidein">
@@ -56,7 +57,11 @@ function ControlsVideo({ video, prevVideo, nextVideo }) {
 
   return (
     <Fragment>
-      {info && moreInfo()}
+      {
+        //Si el estado de info es verdadero, muestra la informacion
+        //Caso contrario, no muestra nada
+        info && moreInfo()
+      }
       <div className="controls">
         <button
           className="btn btn-reaction like"

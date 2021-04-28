@@ -8,7 +8,7 @@ import Video4 from "../video/video_4.mp4";
 
 import Video from "./Video";
 import ControlsVideo from "./ControlsVideo";
-import VideosData from "../Data/StadisticVideo.json";
+import VideosData from "../Data/VideoData.json";
 
 /*Trae la informacion de La lista de videos y los convierte en objetos*/
 const listVideosData = JSON.parse(JSON.stringify(VideosData));
@@ -21,11 +21,14 @@ function MediaPlayer() {
 
   /*Funcion que resetea el contador cuando llega al maximo o al minimo para avanzar o retroceder el video*/
   function useMinMax(max) {
+    //Estado del contador
     const [count, setCount] = useState(0);
 
+    //Si el estado es mayor o igual al maximo, lo resetea
     if (count >= max) {
       setCount(0);
     } else if (count <= -1) {
+      //Caso contrario, lo coloca al maximo
       setCount(3);
     }
 

@@ -2,6 +2,7 @@ import React from "react";
 
 import "./css/Video.css";
 
+//Estructura del video
 const Video = ({ video }) => {
   return (
     <video
