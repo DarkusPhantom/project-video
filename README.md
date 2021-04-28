@@ -15,9 +15,10 @@ baby boomers)
 ## Pasos para probar ejecutar la app
 
 1. Clonar este repositorio.
-2. Dirigirte dentro de la carpeta que clonaste y ejecuta: `npm run start` para probar el proyecto
-
-Automáticamente se abrirá la app en tu navegador por defecto. En caso contrario, abre el navegador y escribe en la barra de búsqueda `localhost:3000`
+2. Dirigirte dentro de la carpeta que clonaste y ejecuta:
+3. `npm install` para instalar las dependencias del proyecto
+4. `npm run start` para probar el proyecto
+5. Automáticamente se abrirá la app en tu navegador por defecto. En caso contrario, abre el navegador y escribe en la barra de búsqueda `localhost:3000`
 
 ## Explicación de los componentes:
 
@@ -27,6 +28,22 @@ Automáticamente se abrirá la app en tu navegador por defecto. En caso contrari
 - **Video:** Muestra el video a reproducir
 - **ControlsVideo:** Contiene los botones para pasar al siguiente video o volver al anterior, muestra la información del video(Likes, Dislikes, Views y Nombre del video) y los botones de Like (Corazón) y dislike (Corazón roto)
 - **Stadistic:** Contiene los datos de la tabla y su sección para ordenarlo por diferentes tipos
-- **NavbarTable:** Contiene los botones para indicar como va ordenar la tabla de estadisticas. Sea por pais, generación o views
 - **StadisticTable:** Contiene todos la información para plasmar en la tabla de estadisticas. Esta dividido por Pais, Rango Etario, Fecha y Views
 
+## Explicacion de funcion de cada carpeta dentro de src
+
+- **Components**: Contiene los componentes de la app
+- **Data**: Contiene la base de datos (de prueba) para la app
+- **Video**: Contiene los videos de la app
+- Dentro de la carpeta _Componentes_ existe una carpeta llamada css. Ahi se encuentran los estilos de la app
+
+## Probar la base de datos
+
+La base de datos se encuentra en Data.
+Los archivos .json son la base de datos ~~(Lo se, hubiera sido genial haber trabajado con una base de datos real)~~.
+
+El archivo:
+
+- **csvjson.json** contiene los datos del csv que me mandaron pero en formato json.
+- **DataTable.json** contiene los datos del archivo que me mandaron pero solo 47 elementos como ejemplos.
+- **VideoData** contiene los datos de los videos. Use varios valores como ejemplo
