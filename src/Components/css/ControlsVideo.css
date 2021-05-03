@@ -68,7 +68,8 @@
 
 @media screen and (min-width: 1024px) {
   .controls {
-    grid-template-columns: 50px 10px 50px 1fr 15% 15% 1fr 100px;
+    grid-template-columns: 0.2fr 2% 0.2fr 1fr 15% 15% 1fr 100px;
+    width: calc(100% - 30px);
   }
 
   .more-info p {

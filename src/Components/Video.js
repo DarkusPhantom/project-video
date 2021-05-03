@@ -7,6 +7,7 @@ const Video = ({ video }) => {
   return (
     <video
       id="video"
+      className="mediaPlayer-video"
       controls="controls"
       muted="muted"
       type="video/mp4"
